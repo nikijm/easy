@@ -76,8 +76,6 @@
             outline: 0;
             background-color: #ceeda8;
         }
-        .router-link-active{
-          
-        }
+       
     }
 </style>

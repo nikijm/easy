@@ -9,10 +9,10 @@ const types = {
 const menu = { 
     state :{
         minLeftMenuWidth:35,
-        maxLeftMenuWidth:180,
+        maxLeftMenuWidth:230,
         sidebar: {
             opened: true,  
-            width: 180
+            width: 230
         },
         isCollapse:false, // 菜单默认展开
         isFooter:false

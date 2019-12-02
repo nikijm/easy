@@ -1,11 +1,17 @@
 const zh = {
     // layout
     commons: {
+      headerName:"EasyAVR",
+      videoPlaza:"视频广场",
+      videoBack:"录像回看",
+      channelConfig:"通道配置",
+      basicConfig:"基础配置",
+      versionInfo:"版本信息",
       xiaoai: '小爱',
       admin: '管理员',
       editor: '赵晓编',
       quit: '退出',
-      hi: '您好',
+      hi: '登录',
       index: '首页',
       userManage: '用户管理',
       share: '分享功能',

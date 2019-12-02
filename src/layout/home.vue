@@ -4,7 +4,6 @@
         <div class="menu_right wflex el-scrollbar" ref="menu_right" :style="{left:sidebar.width+'px'}">
             <head-nav></head-nav>
             <div class="menu_content" ref="menu_content">
-                <bread></bread>
                 <router-view></router-view><!--页面渲染入口-->
             </div>
             <footerNav></footerNav>
@@ -17,7 +16,6 @@
 
     import HeadNav from './headNav.vue';
 	import LeftMenu from './leftMenu.vue';
-	import Bread from './bread.vue';
 	import FooterNav from './footerNav.vue';
 	import backTop from 'cps/backTop';
 
@@ -33,7 +31,6 @@
         components:{
             HeadNav,
             LeftMenu,
-            Bread,
             FooterNav,
             backTop
         },
@@ -59,7 +56,7 @@
                 position: relative;
                 margin-top:60px;
                 width:100%;
-                background:#f0f2f5;
+                // background:#f0f2f5;
             }
 
         }

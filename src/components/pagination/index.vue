@@ -54,5 +54,8 @@
     .pagination{
         text-align: right;
         padding: 10px 18px;
+        /deep/.el-pagination.is-background .el-pager li:not(.disabled).active {
+            background-color:#00a65a;
+        }
     }
 </style>

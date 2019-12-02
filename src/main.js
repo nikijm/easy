@@ -4,7 +4,7 @@ import router from './router'
 import store from './store/'
 // 'development',use package;'production':use cdn;
 import ElementUI from 'element-ui'
-Vue.use(ElementUI, { size: 'mini'});
+Vue.use(ElementUI, { size: 'mini' });
 import('element-ui/lib/theme-chalk/index.css')
 
 import './components/iconSvg' // iconSvg
@@ -22,7 +22,12 @@ Vue.prototype.shareConfig = shareConfig;
 
 
 Vue.config.productionTip = false;
-
+import VideoPlayer from 'vue-video-player'
+import 'vue-video-player/src/custom-theme.css'
+import 'video.js/dist/video-js.css'
+import 'videojs-flash'
+import 'videojs-contrib-hls'
+Vue.use(VideoPlayer)
 
 
 new Vue({
