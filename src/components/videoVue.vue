@@ -5,6 +5,10 @@
                        :playsinline="true"
                        :options="playerOptions">
         </video-player>
+        <div class="player-info">
+            <span>channel</span>
+            <span><i class="el-icon-success"></i> 在线</span>
+        </div>
     </div>
 </template>
 
@@ -51,11 +55,11 @@ import {videoPlayer} from 'vue-video-player'
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style  lang="less">
+<style  lang="less" scoped>
     .player{
         .video-player{
             width: 100%;
-            height: 100%;
+            height: 300px;
         }
         .video-js{
             width: 100%;
@@ -64,12 +68,16 @@ import {videoPlayer} from 'vue-video-player'
         video{
             object-fit: fill;
         }
+        /deep/.vjs-custom-skin > .video-js {
+            height: 100%;
+        }
+        .player-info {
+            padding: 5px;
+            color: #00a560;
+            span:last-child {
+                float: right;
+            }
+        }
     }
 </style>
-<style  lang="less" scoped>
-.player{
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-</style>
+

@@ -1,15 +1,8 @@
 <template>
   <div class="safety container">
-    <!-- 第一排 -->
     <div class="wrapper">
-      <wrapperBoxTitle :title="'东门进校'">
+      <wrapperBoxTitle :title="'chanel1'">
         <living :sources="videoOptions1"></living>
-      </wrapperBoxTitle>
-      <wrapperBoxTitle :title="'东门出校'">
-        <living :sources="videoOptions2"></living>
-      </wrapperBoxTitle>
-      <wrapperBoxTitle :title="'小门'">
-        <living :sources="videoOptions3"></living>
       </wrapperBoxTitle>
     </div>
   </div>
@@ -20,7 +13,6 @@ import wrapperBoxTitle from "@/components/wrapperBoxTitle.vue"; //引入盒子ti
 import living from '@/components/videoVue'
 
 export default {
-  name: "safety",
   components: {
     wrapperBoxTitle,
     living
@@ -30,34 +22,33 @@ export default {
       videoOptions1:[
         {
           type: "rtmp/mp4",
-          src: 
-          "rtmp://112.19.241.28:31935/zxedu1115080/192.168.1.174"
+          src: "rtmp://112.19.241.28:31935/zxedu1115080/192.168.1.174"
         }
       ],
-      videoOptions2: [
-        {
-          type: "rtmp/mp4",
-          src: "rtmp://112.19.241.28:31935/zxedu1115080/192.168.1.175"
-        }
-      ],
-      videoOptions3: [
-        {
-          type: "rtmp/mp4",
-          src: "rtmp://112.19.241.28:31935/zxedu1115080/192.168.1.171"
-        }
-      ],
-      videoOptions4: [
-        {
-          type: "rtmp/mp4",
-          src: "rtmp://112.19.241.28:31935/zxedu1115080/192.168.1.172"
-        }
-      ],
-      videoOptions5: [
-        {
-          type: "rtmp/mp4",
-          src: "rtmp://112.19.241.28:31935/zxedu1115080/192.168.1.173"
-        }
-      ]
+      // videoOptions2: [
+      //   {
+      //     type: "rtmp/mp4",
+      //     src: "rtmp://112.19.241.28:31935/zxedu1115080/192.168.1.175"
+      //   }
+      // ],
+      // videoOptions3: [
+      //   {
+      //     type: "rtmp/mp4",
+      //     src: "rtmp://112.19.241.28:31935/zxedu1115080/192.168.1.171"
+      //   }
+      // ],
+      // videoOptions4: [
+      //   {
+      //     type: "rtmp/mp4",
+      //     src: "rtmp://112.19.241.28:31935/zxedu1115080/192.168.1.172"
+      //   }
+      // ],
+      // videoOptions5: [
+      //   {
+      //     type: "rtmp/mp4",
+      //     src: "rtmp://112.19.241.28:31935/zxedu1115080/192.168.1.173"
+      //   }
+      // ]
     };
   },
   methods: {
@@ -68,7 +59,9 @@ export default {
 </script>
 
 <style  lang="less" scoped>
-
+.wrapper {
+  width: 500px;
+}
 .videoBox{
   width: 98%;
   height: 98%;

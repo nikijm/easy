@@ -61,7 +61,7 @@
             background: url('../../assets/img/backTop.png') no-repeat;
             background-position: center;
             background-size: 16px;
-            background-color: #1890ff;
+            background-color: #00a56a;
             width: 40px;
             height: 40px;
             overflow: hidden;

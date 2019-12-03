@@ -71,13 +71,26 @@ export const asyncRouterMap = [
 		children: [
 			{
 				path: 'videoBackList',
+				name: "videoBackList",
 				meta: {
 					title: '录像回看',
 					icon: 'iconinfo',
 					routerType: 'leftmenu'
 				},
 				component: () => import('@/page/videoBack/videoBackList'),
-			}
+			},
+			{
+				path: 'videoBackDetail',
+				name: "videoBackDetail",
+				meta: {
+					title: '录像回看',
+					icon: 'iconinfo',
+					routerType: 'leftmenu'
+				},
+				hidden: true,
+				component: () => import('@/page/videoBack/videoBackDetail'),
+			},
+
 		]
 	},
 	{

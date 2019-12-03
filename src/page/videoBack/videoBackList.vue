@@ -19,7 +19,8 @@
       <el-table-column prop="updateTime" label="更新时间" sortable></el-table-column>
       <el-table-column label="操作" align="center">
         <template slot-scope="scope">
-          <el-button class="check-video" icon="el-icon-search" @action="verdioInfo(scope)">查看录像</el-button>
+          <el-button class="check-video" icon="el-icon-document" @action="verdioInfo(scope)" size="mini">查看录像</el-button>
+          <el-button icon="el-icon-delete" type="danger" @action="verdioInfo(scope)" size="mini">删除</el-button>
         </template>
       </el-table-column>
     </el-table>
@@ -61,7 +62,7 @@ export default {
   methods: {
     editTemp() {
       this.$router.push({
-        name: "versionInfo"
+        name: "videoBackDetail"
       });
     }
   },
