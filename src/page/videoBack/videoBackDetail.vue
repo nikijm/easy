@@ -18,7 +18,6 @@
         :data="tableData"
         style="width: 100%"
         :default-sort="{prop: 'date', order: 'descending'}"
-        @row-click="editTemp"
       >
         <el-table-column prop="videoName" label="名称"></el-table-column>
         <el-table-column prop="startTime" label="开始时间" sortable></el-table-column>
@@ -86,11 +85,6 @@ export default {
   },
 
   methods: {
-    editTemp() {
-      this.$router.push({
-        name: "versionInfo"
-      });
-    },
     //返回列表
     backToVideoList() {
       this.$router.push({
